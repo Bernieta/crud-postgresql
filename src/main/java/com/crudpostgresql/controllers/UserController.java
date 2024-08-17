@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 public class UserController {
 
-    private UserServices userServices;
+    private final UserServices userServices;
 
     public UserController(UserServices userServices) {
         this.userServices = userServices;

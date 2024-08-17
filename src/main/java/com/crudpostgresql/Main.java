@@ -1,7 +1,5 @@
 package com.crudpostgresql;
 
-import java.sql.SQLException;
-
 import com.crudpostgresql.controllers.UserController;
 import com.crudpostgresql.entities.UserEntity;
 import com.crudpostgresql.services.UserServices;
@@ -10,7 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         UserController userController = new UserController(new UserServices());
         boolean exit = false;
